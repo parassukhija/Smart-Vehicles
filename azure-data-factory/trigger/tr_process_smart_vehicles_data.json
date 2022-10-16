@@ -1,0 +1,25 @@
+{
+	"name": "tr_process_smart_vehicles_data",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_process_smart_vehicles_data",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/staging/blobs/",
+			"blobPathEndsWith": ".json",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/2aa21e87-d0c5-49ad-847a-b47f2c188888/resourceGroups/rg_smart_vehicles/providers/Microsoft.Storage/storageAccounts/adlssmartvehicles",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
