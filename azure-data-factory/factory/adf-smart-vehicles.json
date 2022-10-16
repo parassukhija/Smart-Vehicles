@@ -1,0 +1,9 @@
+{
+	"name": "adf-smart-vehicles",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cfc30075-6811-418f-928d-1850113d9b50",
+		"tenantId": "d309f125-4bdd-4115-b8ef-f4447333cab7"
+	}
+}
