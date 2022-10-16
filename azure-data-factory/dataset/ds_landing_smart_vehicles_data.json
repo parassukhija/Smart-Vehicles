@@ -1,0 +1,27 @@
+{
+	"name": "ds_landing_smart_vehicles_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_smart_vehicles",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"landingFolder": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().landingFolder",
+					"type": "Expression"
+				},
+				"fileSystem": "landing"
+			}
+		},
+		"schema": {}
+	}
+}
