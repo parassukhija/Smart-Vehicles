@@ -2,7 +2,7 @@
 	"name": "tr_process_smart_vehicles_data",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
