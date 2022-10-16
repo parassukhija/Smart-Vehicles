@@ -1,0 +1,47 @@
+{
+	"name": "ds_sqldb_smart_vehicles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sqldb_smart_vehicles",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "VehicleID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "latitude",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "longitude",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "temperature",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "speed",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "smart_vehicles",
+			"table": "vehicles_data"
+		}
+	}
+}
